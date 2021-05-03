@@ -1,0 +1,23 @@
+#laskintable{
+  width: 400px;
+  height: 600px;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+#laskintable td{
+  border: 2px solid black;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  background-color: #fca429;
+}
+button{
+  width: 65px;
+  height: 65px;
+  border: 2px solid #d1d1d1;
+  background-color: #ffffff;
+  font-size: large;
+}
+p {
+  font-size: large;
+}
