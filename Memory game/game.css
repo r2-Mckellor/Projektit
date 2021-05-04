@@ -11,8 +11,8 @@ body {
 }
 
 .memory-game {    /*tämä on peli pöytä*/
-  width: 640px;
-  height: 640px;
+  width: 740px;
+  height: 740px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@ body {
 
 .memory-card {   /*tässä on peli kortit*/
   width: calc(25% - 10px);  /*molempiin pituuden ja leveyden kanssa tarvitaan -10 px niiden koon kanssa, jotta*/
-  height: calc(35% - 10px); /*ne mahtuvat 5px marginaalin kanssa 640px/640px laudalle nätisti*/
+  height: calc(25% - 10px); /*ne mahtuvat 5px marginaalin kanssa 640px/640px laudalle nätisti*/
   margin: 5px;
   position: relative;
   transition: all .5s;
