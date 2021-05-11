@@ -21,6 +21,7 @@ function flipCard() {
   lockBoard = true;
 
   checkForMatch();
+  movecounter();
 }
 
 function checkForMatch() {
@@ -42,6 +43,11 @@ function unflipCards() {
 
     resetBoard();
   }, 500);
+}
+
+function movecounter(){
+  info++;
+  counter.innerHTML() = info;
 }
 
 function resetBoard() {

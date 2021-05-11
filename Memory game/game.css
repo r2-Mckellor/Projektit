@@ -10,10 +10,49 @@ body {
   background: grey;
 }
 
+.title {
+  font-family: "Antonio", sans-serif;
+  font-size: 200%;
+  margin-left: 10px;
+  margin-top: 30px;
+  text-shadow: 0 0 3px red;
+  display: flex;
+}
+
+.time {
+  width: 80px;
+  height: 40px;
+  margin-left: 38%;
+  margin-top: 58px;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+}
+
+.moves {
+  width: 80px;
+  height: 40px;
+  margin-top: 58px;
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+}
+
+.info {
+  margin: auto;
+  font-size: 120%;
+}
+
+
 .memory-game {    /*tämä on peli pöytä*/
   width: 740px;
   height: 740px;
   margin: auto;
+  margin-left: -32%;
+  margin-top: 7%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,6 +97,7 @@ body {
   .memory-game {
     width: 50%;
     height: 90%;
+    margin-top: 10%;
   }
 
   .memory-card {
