@@ -5,6 +5,7 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
@@ -21,18 +22,20 @@ function flipCard() {
   lockBoard = true;
 
   checkForMatch();
-  movecounter();
+
 }
 
 function checkForMatch() {
+
   let isMatch = firstCard.dataset.name === secondCard.dataset.name;
   isMatch ? disableCards() : unflipCards();
+
+  addCounter();
 }
 
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
-
   resetBoard();
 }
 
@@ -40,14 +43,8 @@ function unflipCards() {
   setTimeout(() => {
     firstCard.classList.remove('flip');
     secondCard.classList.remove('flip');
-
     resetBoard();
   }, 500);
-}
-
-function movecounter(){
-  info++;
-  counter.innerHTML() = info;
 }
 
 function resetBoard() {
@@ -56,6 +53,33 @@ function resetBoard() {
   firstCard = null;
   secondCard = null;
 }
+
+let moves = 0;
+let counter = document.querySelector(".moves");
+function addCounter() {
+  moves++;
+  counter.innerHTML = moves;
+
+  if (moves == 1){
+    second = 0;
+    startTimer();
+  }
+}
+
+var second = 0;
+var timer = document.querySelector(".timer")
+var interval;
+function  startTimer() {
+  interval = setInterval(function(){
+    timer.innerHTML = second;
+    second++;
+  },1000);
+  if (flip.length == 16)
+  {
+    clearInterval(interval);
+  }
+}
+
 
 (function shuffle() {
   cards.forEach(card => {
