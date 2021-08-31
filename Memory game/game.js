@@ -1,6 +1,5 @@
 
 const cards = document.querySelectorAll('.memory-card');
-
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
@@ -37,6 +36,8 @@ function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
   resetBoard();
+
+  matched();
 }
 
 function unflipCards() {
@@ -66,6 +67,17 @@ function addCounter() {
   }
 }
 
+let match = 0;
+function matched() {
+  match++;
+  console.count();
+
+  if (match == 8)
+  {
+    finnished();
+  }
+}
+
 var second = 0;
 var timer = document.querySelector(".timer")
 var interval;
@@ -74,10 +86,11 @@ function  startTimer() {
     timer.innerHTML = second;
     second++;
   },1000);
-  if (flip.length == 16)
-  {
-    clearInterval(interval);
-  }
+}
+
+function finnished()
+{
+  clearInterval(interval);
 }
 
 
