@@ -91,6 +91,7 @@ function  startTimer() {
 function finnished()
 {
   clearInterval(interval);
+  alert("Gonratz! you finished with" + " " + moves++ + " " + "moves and in only" + " " + second + " " + "seconds");
 }
 
 

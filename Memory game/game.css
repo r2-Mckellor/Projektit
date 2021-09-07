@@ -14,7 +14,7 @@ body {
   font-family: "Antonio", sans-serif;
   font-size: 200%;
   margin-top: 10px;
-  margin-left: 43%;
+  margin-left: 42.7%;
   text-shadow: 0 0 3px red;
   display: flex;
   position: fixed;
@@ -116,12 +116,12 @@ body {
   transform: rotateY(180deg);
 }
 
-@media screen and (max-width: 750px) and (max-height: 500px) {
+@media screen and (max-width: 500px) and (max-height: 750px) {
 
   .title {
     font-size: 150%;
     margin-top: 5px;
-    margin-left: 35%;
+    margin-left: 28%;
   }
 
   .timer {
@@ -151,9 +151,10 @@ body {
   }
 
   .memory-game {
-    width: 50%;
+    width: 70%;
     height: 60%;
-    margin-top: 10%;
+    margin-top: 20%;
+    margin-left: 17%;
   }
 
   .memory-card {
@@ -164,6 +165,60 @@ body {
 
   .front-face,
   .back-face {
+    padding: 3px;
+  }
+}
+
+@media screen and (max-width: 750px) and (max-height: 500px) {
+
+    .title {
+      font-size: 150%;
+      margin-top: 5px;
+      margin-left: 35%;
+      display: flex;
+    }
+
+    .timer {
+      width: 40px;
+      height: 20px;
+      margin-left: 15%;
+      font-size: 75%;
+    }
+
+    .stat1 {
+      margin-top: 25px;
+      margin-left: 15%;
+      font-size: 120%;
+    }
+
+    .moves {
+      width: 40px;
+      height: 20px;
+      margin-left: 80%;
+      font-size: 75%;
+    }
+
+    .stat2 {
+      margin-top: 25px;
+      margin-left: 80%;
+      font-size: 120%;
+    }
+
+    .memory-game {
+      width: 50%;
+      height: 60%;
+      margin-top: 10%;
+      margin-left: 30%;
+    }
+
+    .memory-card {
+      width: calc(20% - 8px);
+      height: calc(33% - 8px);
+      margin: 5px;
+    }
+
+    .front-face,
+    .back-face {
     padding: 3px;
   }
 }
