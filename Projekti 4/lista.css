@@ -1,0 +1,25 @@
+body {
+  background-color: grey;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 400%;
+  color: white;
+}
+
+p {
+  text-align: center;
+  font-size: 130%;
+  color: white;
+}
+
+ .bar{
+   text-align: center;
+   color: white;
+}
+
+ul {
+  color: white;
+}
