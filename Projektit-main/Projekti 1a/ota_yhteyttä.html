@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ota yhteyttä</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="ota_yhteyttä.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ota_yhteyttä.js"></script>
+    </head>
+    <body>
+    <div class="keskita">
+      <form class="form" onsubmit="return tarkasta(this)" method="post">
+      <article>
+      <p class = "headline">Halukas töihin?</p>
+    <table>
+       <tr>
+        <td>Etunimi:</td>
+        <td class="right"><input type="text" name="fname" value=""></td>
+      </tr>
+      <tr>
+        <td>Sukunimi:</td>
+        <td class="right"><input type="text" name="lname" value=""></td>
+      </tr>
+      <tr>
+        <td>Sähköposti:</td>
+        <td class="right"><input type="text" name="email" value=""></td>
+      </tr>
+    </table>
+      <p class = "headline">Mitä kieliä osaat?</p>
+        <input type="checkbox" name="lang" value="Python">
+        <label> Osaan Pythonia</label><br>
+
+        <input type="checkbox" name="lang" value="Javascript">
+        <label> Osaan Javascriptiä</label><br>
+
+        <input type="checkbox" name="lang" value="C#">
+        <label> Osaan C#</label><br>
+
+      <p class = "headline">Kuinka kauan olet koodannut?</p>
+    <div class="keskita">
+      <select id = "years">
+        <option value="0">valitse vuosi</option>
+        <option value="1">1 vuotta</option>
+        <option value="2">2 vuotta</option>
+        <option value="3">3 vuotta</option>
+        <option value="4">4 vuotta</option>
+        <option value="5">5 vuotta</option>
+        <option value="6">6 vuotta</option>
+        <option value="7">7 vuotta</option>
+        <option value="8">8 vuotta</option>
+        <option value="9">9 vuotta</option>
+        <option value="10"> >= 10 vuotta</option>
+      </select>
+    </div>
+      <p colspan = "2" class = "headline">Kerro lyhyesti itsestäsi:</p>
+        <tr>
+        <td colspan="2" class="keskita"><textarea name="info" rows="8" cols="53"></textarea></td>
+      </tr>
+
+        <br><br>
+        <div class="keskita">
+            <input type="submit" value="Lähetä hakemus">
+        </div>
+        <br><br>
+      </article>
+    </form>
+    </div>
+  </body>
+</html>
