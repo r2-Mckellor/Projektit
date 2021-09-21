@@ -7,7 +7,10 @@
 body {
   height: 100vh;
   display: flex;
-  background: grey;
+  background-image: url('https://i.pinimg.com/originals/e6/0b/04/e60b04f030d758c702d970772adbe01e.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .title {
