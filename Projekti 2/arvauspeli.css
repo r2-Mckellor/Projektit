@@ -1,6 +1,8 @@
 body
 {
   background-color: #DD1133;
+  margin-left: 45%;
+  margin-top: 20%;
 }
 .hidden
 {
@@ -9,4 +11,5 @@ body
 .nayta
 {
   display:inline-block;
+  margin: 5px;
 }

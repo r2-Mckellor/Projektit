@@ -5,7 +5,7 @@ window.onload= function alusta()
 {
   var alustus = '';
 
-  alert(arvattava);
+  alert("sinun on löydettävä" + " " + arvattava);
   for(var i = 1; i <=10; i++)
   {
     for(var j = 0; j < 3; j++)
@@ -37,7 +37,7 @@ function arvaa(arpa)
       var x = '';
       for(var luvut = 1; luvut < arvaus; luvut++)
       {
-        x = document.getElementsByName('' + luvut+ '');
+        x = document.getElementsByName('' + luvut + '');
         console.log(x);
         x.style.nayta = "none";
       }
@@ -46,12 +46,14 @@ function arvaa(arpa)
     {
       alert('Valitsit liian suuren numeron');
     }
-    else if (arvaus == arvattava){
+    else if (arvaus == arvattava)
+    {
       alert('Oikein, käytit ' + kerrat + ' kertaa');
     }
-    else {
-      alert('Käytit kaikki kertasi');
-    }
+  }
+  if (kerrat == 3)
+  {
+      alert('voi ei käytit kaikki arvauksesi');
   }
 
 }
